@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overview - Bhazk Template</title>
+
+    <link rel="stylesheet" href="/dist/css/bhazk.css" />
+
+</head>
+
+<body class="bg-slate-100 dark:bg-slate-900 font-sans text-slate-700 dark:text-slate-400">
+    <div class="container mx-auto px-5">
+        <div class="flex flex-col space-y-8 md:flex-row md:space-y-0 md:space-x-8 h-screen items-start justify-between">
+            <div class="w-full md:w-1/2 md:pt-10">
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0">
+                    <!-- account information -->
+                    <div class="w-full rounded-lg bg-slate-50 dark:bg-slate-800 px-6 py-8 shadow-lg">
+                        <div
+                            class="relative flex flex-row place-content-center items-center space-x-5 text-center md:mx-auto md:flex-col md:space-x-0 md:space-y-5">
+
+                            <div class="absolute -top-2 -right-2">
+                                <!-- sun -->
+                                <svg class="sun cursor-pointer w-5 h-5 text-slate-700 dark:text-slate-400"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                                </svg>
+
+                                <!-- moon -->
+                                <svg class="moon cursor-pointer w-5 h-5 text-slate-700 dark:text-slate-400"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                                </svg>
+
+                            </div>
+                            <!-- avatar -->
+                            <div class="relative">
+                                <img class="h-16 w-16 rounded-full p-1 ring-2 ring-gray-300 dark:ring-gray-500 md:h-36 md:w-36"
+                                    src="https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=581&q=80"
+                                    alt="Bhaskara" />
+                                <span
+                                    class="absolute -bottom-1 right-9 h-4 w-4 rounded-full border-2 border-white bg-green-400 dark:border-gray-800 md:-bottom-1 md:left-8 md:h-5 md:w-5"></span>
+                            </div>
+                            <!-- end avatar -->
+                            <div class="flex place-content-center space-x-4 md:flex-col md:space-y-4 md:space-x-0">
+                                <div class="text-md font-semibold md:text-xl">
+                                    Hi, Bhaskara!
+                                </div>
+                                <button class="inline-flex items-center rounded-full border border-slate-300
+                                    bg-slate-300 px-3 py-1 text-center text-sm font-medium
+                                    hover:bg-slate-100 focus:outline-none focus:ring-4 focus:ring-gray-100
+                                    dark:border-slate-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700
+                                    dark:focus:ring-gray-600">
+                                    <svg class="h-4 w-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                                    </svg>
+
+                                    <span class="w-full text-xs text-slate-700 dark:text-slate-400">Sign Out</span>
+                                </button>
+                            </div>
+                            <!-- menu -->
+                            <div class="hidden w-full space-y-1 md:block ">
+                                <a class="my-1 block rounded-full bg-slate-100 px-4 py-2 hover:text-indigo-500 text-slate-700 dark:hover:bg-slate-700 dark:bg-slate-700 dark:text-slate-400"
+                                    href="/src/pages/index.html">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm">Overview</span>
+                                        <svg class="h-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="h-6 w-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                        </svg>
+                                    </div>
+                                </a>
+
+                                <a class="my-1 block rounded-full px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-700 dark:text-slate-400 hover:text-indigo-500"
+                                    href="/src/pages/profile.html">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm">Profile</span>
+                                        <svg class="h-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="h-6 w-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a class="my-1 block rounded-full px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-700 dark:text-slate-400 hover:text-indigo-500"
+                                    href="/src/pages/setting.html">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm">Settings</span>
+                                        <svg class="h-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="h-6 w-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a class="my-1 block rounded-full px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-700 dark:text-slate-400 hover:text-indigo-500"
+                                    href="/src/pages/security.html">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm">Security</span>
+                                        <svg class="h-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="h-6 w-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a class="my-1 block rounded-full px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-700 dark:text-slate-400 hover:text-indigo-500"
+                                    href="#">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm">Messages</span>
+                                        <svg class="h-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="h-6 w-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a class="my-1 block rounded-full px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-700 dark:text-slate-400 hover:text-indigo-500"
+                                    href="#">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm">Billing</span>
+                                        <svg class="h-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="h-6 w-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end menu -->
+                        </div>
+                    </div>
+                    <!-- end account information -->
+
+                    <nav class="bg-slate-50 dark:bg-slate-800 md:hidden block rounded-lg shadow-lg">
+                        <div class="flex justify-center items-center py-4">
+                            <a href="#" class="text-slate-700 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-indigo-500 px-3 py-2
+                                                rounded-md text-sm font-normal" aria-current="page">Overview</a>
+
+                            <a href="#" class="text-slate-700 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700
+                                hover:text-indigo-500 px-3 py-2
+                                rounded-md text-sm font-normal">Profile</a>
+
+                            <a href="#" class="text-slate-700 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700
+                                hover:text-indigo-500 px-3 py-2
+                                rounded-md text-sm font-normal">Settings</a>
+
+                            <a href="#" class="text-slate-700 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700
+                                hover:text-indigo-500 px-3 py-2
+                                rounded-md text-sm font-normal">Security</a>
+                            <a href="#" class="text-slate-700 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700
+                                hover:text-indigo-500 px-3 py-2
+                                rounded-md text-sm font-normal">Messages</a>
+                            <a href="#" class="text-slate-700 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700
+                                hover:text-indigo-500 px-3 py-2
+                                rounded-md text-sm font-normal">Billing</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <main class="w-full md:pt-10 max-h-screen overflow-y-auto no-scrollbar">
+                <!-- Content goes here -->
+                <!-- Two Factor Authentication -->
+                <div class="flex flex-col space-y-8 md:flex-row md:space-x-8 md:space-y-0">
+                    <div class="w-full rounded-lg bg-slate-50 dark:bg-slate-800 px-6 py-8 shadow-lg">
+                        <div class="pb-1 text-lg font-semibold">
+                            Two Factor Authentication
+                        </div>
+                        <span class="pb-2 text-xs text-slate-500 dark:text-slate-400">Keep your account secure by
+                            enabling two-factor
+                            authentication.</span>
+                    </div>
+                </div>
+                <!-- End Two Factor Authentication -->
+
+                <!-- Two Factor Authentication -->
+                <div class="flex flex-col space-y-8 pt-8 md:flex-row md:space-x-8 md:space-y-0">
+                    <div class="w-full rounded-lg bg-slate-50 dark:bg-slate-800 px-6 py-8 shadow-lg">
+
+                        <div class="pb-2 text-lg font-semibold">Change Password</div>
+
+                        <div class="mt-4 w-full">
+                            <label class="text-md mb-2 block font-medium text-slate-700 dark:text-slate-500"
+                                for="password">Current
+                                Password</label>
+                            <input type="password" id="old-password"
+                                class="block w-full rounded-xl border border-slate-300 bg-slate-50 p-2.5 text-sm text-slate-700 focus:border-indigo-500 focus:ring-indigo-500 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-400 dark:placeholder-slate-400 dark:focus:border-indigo-500 dark:focus:ring-indigo-500"
+                                required />
+                        </div>
+                        <div class="mt-4 w-full">
+                            <label class="text-md mb-2 block font-medium text-slate-700 dark:text-slate-500"
+                                for="name">New
+                                Password</label>
+                            <input type="password" id="new-password" class="block w-full rounded-xl border border-slate-300 bg-slate-50 p-2.5 text-sm
+                                text-slate-700 focus:border-indigo-500 focus:ring-indigo-500 dark:border-slate-600
+                                dark:bg-slate-700 dark:text-slate-400 dark:placeholder-slate-400
+                                dark:focus:border-indigo-500 dark:focus:ring-indigo-500" required />
+                            <span class="text-xs dark:text-slate-500 text-slate-400">The password must be 8-20
+                                characters, and must not
+                                contain
+                                spaces.</span>
+                        </div>
+                        <div class="mt-4 w-full">
+                            <label class="text-md mb-2 block font-medium text-slate-700 dark:text-slate-500"
+                                for="name">Verify
+                                Password</label>
+                            <input type="password" id="old-password" class="block w-full rounded-xl border border-slate-300 bg-slate-50 p-2.5 text-sm
+                                text-slate-700 focus:border-indigo-500 focus:ring-indigo-500 dark:border-slate-600
+                                dark:bg-slate-700 dark:text-slate-400 dark:placeholder-slate-400
+                                dark:focus:border-indigo-500 dark:focus:ring-indigo-500" required />
+                            <span class="text-xs dark:text-slate-500 text-slate-400">To confirm, type the new password
+                                again.</span>
+                        </div>
+                        <div class="pt-8">
+                            <button type="submit" class="cursor-pointer dark:border dark:border-indigo-500 rounded-xl bg-indigo-500 px-6
+                                py-2 text-center text-slate-50 dark:text-slate-500 duration-300 hover:bg-indigo-700 dark:hover:bg-indigo-700
+                                dark:bg-slate-800 dark:hover:text-slate-300">
+                                Save
+                            </button>
+                            <button
+                                class="cursor-pointer dark:hover:text-slate-300 rounded-xl border border-slate-500 px-6
+                                py-2 text-center text-slate-700 dark:text-slate-500 duration-300 hover:bg-slate-500 hover:text-white">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Two Factor Authentication -->
+
+                <!-- Two Factor Authentication -->
+                <div class="flex flex-col space-y-8 pt-8 md:flex-row md:space-x-8 md:space-y-0">
+                    <div class="w-full rounded-lg bg-slate-50 dark:bg-slate-800 px-6 py-8 shadow-lg">
+                        <div class="pb-1 text-lg font-semibold dark:text-slate-400">Your Sessions</div>
+                        <div class="flex flex-col justify-between space-y-4 md:flex-row md:items-center md:space-y-0">
+                            <div class="w-full text-xs text-slate-500 dark:text-slate-400 md:w-3/4">
+                                This is a list of devices that have logged into your account.
+                                Revoke any sessions that you do not recognize.
+                            </div>
+                            <div>
+                                <button type="submit"
+                                    class="cursor-pointer dark:border dark:border-rose-500 rounded-xl bg-rose-500 px-6 py-2 text-center text-sm text-slate-50 duration-300 hover:bg-rose-700 dark:bg-slate-800 dark:text-slate-400 dark:hover:text-slate-50 dark:hover:bg-rose-500">
+                                    Log out all
+                                </button>
+                            </div>
+                        </div>
+
+                        <div
+                            class="mt-12 flex flex-col justify-between space-y-4 md:flex-row md:items-center md:space-y-0">
+                            <div class="flex w-full flex-row items-center justify-start space-x-4 md:w-1/2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-16 w-16">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                </svg>
+                                <div>
+                                    <div class="text-lg font-semibold text-slate-700 dark:text-slate-500">
+                                        iPhone X
+                                    </div>
+                                    <div class="font-light text-slate-600 dark:text-slate-500">New York, USA</div>
+                                    <div class="text-sm font-semibold text-slate-500">
+                                        Last accessed:
+                                        <span class="font-light text-slate-300">March 10 at 6:06PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="cursor-pointer rounded-full border border-slate-500 px-4 py-1 text-center
+                                    text-sm text-slate-800 duration-300 hover:border-rose-500 hover:bg-rose-700
+                                    dark:hover:bg-rose-700 dark:hover:border-rose-500 hover:text-white
+                                    dark:hover:text-slate-50 dark:bg-slate-800
+                                    dark:text-slate-400">
+                                    Log out
+                                </button>
+                            </div>
+                        </div>
+
+                        <hr class="my-8 h-px border-0 bg-slate-200 dark:bg-gray-700" />
+
+                        <div
+                            class="mt-12 flex flex-col justify-between space-y-4 md:flex-row md:items-center md:space-y-0">
+                            <div class="flex w-full flex-row items-center justify-start space-x-4 md:w-1/2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-16 w-16">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                                </svg>
+
+                                <div>
+                                    <div class="text-lg font-semibold text-slate-700 dark:text-slate-500">
+                                        Chrome on Macintosh
+                                    </div>
+                                    <div class="font-light text-slate-600 dark:text-slate-500">New York, USA
+                                    </div>
+                                    <div class="text-sm font-semibold text-slate-500">
+                                        Last accessed:
+                                        <span class="font-light text-slate-300">March 11 at 4:06PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="cursor-pointer rounded-full border border-slate-500 px-4 py-1 text-center
+                                    text-sm text-slate-800 duration-300 hover:border-rose-500 hover:bg-rose-700
+                                    dark:hover:bg-rose-700 dark:hover:border-rose-500 hover:text-white
+                                    dark:hover:text-slate-50 dark:bg-slate-800
+                                    dark:text-slate-400">
+                                    Log out
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Two Factor Authentication -->
+                <!-- End content -->
+
+                <footer class="flex flex-col items-center space-y-2 py-10 text-sm text-slate-500">
+                    <span class="text-blue-light dark:text-blue-dark">Copyright © 2022, PRADStudio</span>
+                    <span>Crafted with ❤ by Adi Arta Wibawa</span>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

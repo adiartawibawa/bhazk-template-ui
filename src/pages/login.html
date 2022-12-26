@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Bhazk Template</title>
+
+    <link rel="stylesheet" href="/dist/css/bhazk.css" />
+</head>
+
+<body class="bg-slate-100 font-poppins text-slate-800">
+    <div class="flex items-center justify-center">
+        <div class="w-8/12 md:w-5/12 md:bg-white">
+            <div class="py-10 md:py-0">
+                <div
+                    class="flex flex-col items-center justify-center space-y-5 rounded-xl bg-white p-8 shadow-lg md:h-screen md:rounded-none md:shadow-none">
+                    <div class="mb-5 text-3xl font-semibold">
+                        Sign in to our platform
+                    </div>
+
+                    <div class="w-full md:w-full">
+                        <label for="email-address-icon"
+                            class="mb-2 block text-sm font-medium text-slate-800 dark:text-white">Your Email</label>
+                        <div class="relative">
+                            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                <svg class="h-5 w-5 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                    class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                </svg>
+                            </div>
+                            <input type="email" id="email-address-icon"
+                                class="block w-full rounded-lg border border-slate-300 bg-gray-50 p-2.5 pl-10 text-sm text-slate-900 focus:border-indigo-500 focus:ring-indigo-500 dark:border-slate-600 dark:bg-slate-700 dark:text-white dark:placeholder-slate-400 dark:focus:border-indigo-500 dark:focus:ring-indigo-500"
+                                placeholder="bhazk@mailtest.com" />
+                        </div>
+                    </div>
+                    <div class="w-full md:w-full">
+                        <label for="email-address-icon"
+                            class="mb-2 block text-sm font-medium text-slate-800 dark:text-white">Your Password</label>
+                        <div class="relative">
+                            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                <svg class="h-5 w-5 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                    class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+                                </svg>
+                            </div>
+                            <input type="password" id="email-address-icon"
+                                class="block w-full rounded-lg border border-slate-300 bg-gray-50 p-2.5 pl-10 text-sm text-slate-900 focus:border-indigo-500 focus:ring-indigo-500 dark:border-slate-600 dark:bg-slate-700 dark:text-white dark:placeholder-slate-400 dark:focus:border-indigo-500 dark:focus:ring-indigo-500"
+                                placeholder="password" />
+                        </div>
+                    </div>
+
+                    <div class="mt-5 flex w-full flex-row items-center justify-between">
+                        <div class="flex text-slate-800">
+                            <input id="checkbox-1" type="checkbox" value=""
+                                class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-indigo-600 focus:ring-2 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-indigo-600" />
+                            <label for="checkbox-1"
+                                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
+                        </div>
+                        <a href="./forgot-password.html" class="text-xs text-slate-500">Lost password ?</a>
+                    </div>
+                    <div class="flex w-full flex-col items-center pt-5 md:w-full">
+                        <button
+                            class="w-full cursor-pointer rounded-full bg-indigo-500 py-2 px-4 text-slate-50 duration-300 hover:bg-indigo-700">
+                            Give me access!
+                        </button>
+                        <div class="pt-3 text-sm text-slate-500">
+                            Not registered?
+                            <a href="./register.html" class="text-indigo-500">Create account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden w-7/12 md:block md:max-h-screen">
+            <figure
+                class="relative w-full cursor-pointer grayscale filter transition-all duration-700 hover:grayscale-0">
+                <img class="max-h-screen w-full object-cover" src="../img/login.jpg" alt="" srcset="" />
+                <figcaption class="absolute bottom-6 px-4 pb-10 text-lg text-white">
+                    <h1 class="font-semibold text-slate-50 md:text-4xl">
+                        Welcome to <span class="font-bhazk">Bhazk !</span>
+                    </h1>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "bhazk",
+  "version": "1.0.0",
+  "description": "web application template based on tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tailwindcss -i ./src/css/app.css -o ./dist/css/bhazk.css --watch"
+  },
+  "author": "Adi Arta Wibawa",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.4"
+  }
+}
